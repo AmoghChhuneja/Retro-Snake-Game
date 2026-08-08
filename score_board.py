@@ -20,7 +20,7 @@ class ScoreBoard(Turtle):
         self.count+=1
     def reset_game(self):
         self.count = 0
-        with open(r"C:\Users\AMOGH CHUNNEJA\Desktop\study\python practice\100dayschallenge\total100\day20 ,21\data.txt",mode = "w") as file:
+        with open(".\data.txt",mode = "w") as file:
             file.write(f"{self.high_score}")
         self.refresh()
     def game_over(self):
