@@ -8,7 +8,7 @@ class ScoreBoard(Turtle):
         self.goto(POSITION)
         self.pencolor("white")
         self.count = 0
-        with open(r"C:\Users\AMOGH CHUNNEJA\Desktop\study\python practice\100dayschallenge\total100\day20 ,21\data.txt") as file:
+        with open(".\data.txt") as file:
             self.high_score = int(file.read())
         self.refresh()
     def refresh(self):
